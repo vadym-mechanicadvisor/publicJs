@@ -151,7 +151,7 @@ unlayer.registerTool({
   renderer: {
     Viewer: unlayer.createViewer({
       render(values) {
-        return template;
+        return getTemplate(values);
       },
     }),
     exporters: {

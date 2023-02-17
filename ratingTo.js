@@ -165,7 +165,7 @@ unlayer.registerTool({
     head: {
       css: function (values) {
         return `
-        .marw-logo {
+   .marw-logo {
   margin: 0 auto 20px;
   width: 144px;
   height: 144px;
@@ -236,7 +236,6 @@ unlayer.registerTool({
   cursor: pointer;
 }
 
-.marw-star-colored,
 .marw-stars > div:hover .marw-star-default {
   display: none;
 }
@@ -296,7 +295,6 @@ unlayer.registerTool({
   display: none;
   color: #29c07b;
 }
-
         `;
       },
       js: function (values) {},

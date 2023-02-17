@@ -163,9 +163,8 @@ unlayer.registerTool({
       },
     },
     head: {
-      css: function (values) {},
-      js: function (values) {
-        `
+      css: function (values) {
+        return `
         .marw-logo {
   margin: 0 auto 20px;
   width: 144px;
@@ -300,6 +299,7 @@ unlayer.registerTool({
 
         `;
       },
+      js: function (values) {},
     },
   },
   validator(data) {

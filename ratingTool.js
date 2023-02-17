@@ -1,6 +1,6 @@
 unlayer.registerTool({
   name: 'my_tool',
-  label: 'My Tool',
+  label: 'Rating Tool',
   icon: 'fa-smile',
   supportedDisplayModes: ['web', 'email'],
   options: {},

@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-const template = `
+const getTemplate = (values) => `
         <div class="marw-logo" style="background: #ffffff no-repeat center/contain url(${values.shopLogoURL}); background-origin: content-box;"></div>
 <div class="marw-container">
   <div class="marw-name">${values.shopName}</div>
@@ -10,31 +10,31 @@ const template = `
     <div class="marw-description">Thank you for choosing ${values.shopName}.<br/>If you have any questions or concerns, please do not hesitate to contact us.</div>
     <div class="marw-stars">
       <div class="marw-star1">
-        <a href=${values.ratingUrl1} target="_blank">
+        <a href="${values.ratingUrl1}" target="_blank">
           <img class="marw-star-default" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star0.png">
           <img class="marw-star-colored" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star1.png">
         </a>
       </div>
       <div class="marw-star2">
-        <a href=${values.ratingUrl2} target="_blank">
+        <a href="${values.ratingUrl2}" target="_blank">
           <img class="marw-star-default" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star0.png">
           <img class="marw-star-colored" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star2.png">
         </a>
       </div>
       <div class="marw-star3">
-        <a href=${values.ratingUrl3} target="_blank">
+        <a href="${values.ratingUrl3}" target="_blank">
           <img class="marw-star-default" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star0.png">
           <img class="marw-star-colored" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star3.png">
         </a>
       </div>
       <div class="marw-star4">
-        <a href=${values.ratingUrl4} target="_blank">
+        <a href="${values.ratingUrl4}" target="_blank">
           <img class="marw-star-default" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star0.png">
           <img class="marw-star-colored" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star4.png">
         </a>
       </div>
       <div class="marw-star5">
-        <a href=${values.ratingUrl5} target="_blank">
+        <a href="${values.ratingUrl5}" target="_blank">
           <img class="marw-star-default" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star0.png">
           <img class="marw-star-colored" width="36px" height="36px" src="https://signature-icons-ma.s3.amazonaws.com/star5.png">
         </a>
@@ -51,7 +51,7 @@ const template = `
   </div>
 </div>
 
-        `
+        `;
 
 unlayer.registerTool({
   name: "my_tool",
@@ -156,10 +156,10 @@ unlayer.registerTool({
     }),
     exporters: {
       web: function (values) {
-        return template;
+        return getTemplate(values);
       },
       email: function (values) {
-        return template;
+        return getTemplate(values);
       },
     },
     head: {

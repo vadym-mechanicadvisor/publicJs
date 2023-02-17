@@ -239,25 +239,25 @@ unlayer.registerTool({
 .marw-star-colored {
    display: none;
 }
-.marw-stars \003e div:hover .marw-star-default {
+.marw-stars ${"\\003E"} div:hover .marw-star-default {
   display: none;
 }
-.marw-stars \003e div:hover .marw-star-colored {
+.marw-stars ${"\\003E"} div:hover .marw-star-colored {
   display: block;
 }
 
-.marw-star1:hover ~ .marw-stars-text \003e .marw-stars-text0,
-.marw-star2:hover ~ .marw-stars-text \003e .marw-stars-text0,
-.marw-star3:hover ~ .marw-stars-text \003e .marw-stars-text0,
-.marw-star4:hover ~ .marw-stars-text \003e .marw-stars-text0,
-.marw-star5:hover ~ .marw-stars-text \003e .marw-stars-text0 {
+.marw-star1:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text0,
+.marw-star2:hover ~ .marw-stars-text ${"\\003E"}.marw-stars-text0,
+.marw-star3:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text0,
+.marw-star4:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text0,
+.marw-star5:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text0 {
   display: none;
 }
-.marw-star1:hover ~ .marw-stars-text \003e .marw-stars-text1,
-.marw-star2:hover ~ .marw-stars-text \003e .marw-stars-text2,
-.marw-star3:hover ~ .marw-stars-text \003e .marw-stars-text3,
-.marw-star4:hover ~ .marw-stars-text \003e .marw-stars-text4,
-.marw-star5:hover ~ .marw-stars-text \003e .marw-stars-text5 {
+.marw-star1:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text1,
+.marw-star2:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text2,
+.marw-star3:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text3,
+.marw-star4:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text4,
+.marw-star5:hover ~ .marw-stars-text ${"\\003E"} .marw-stars-text5 {
   display: block;
 }
 

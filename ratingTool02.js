@@ -236,6 +236,9 @@ unlayer.registerTool({
   cursor: pointer;
 }
 
+.marw-star-colored {
+   display: none;
+}
 .marw-stars > div:hover .marw-star-default {
   display: none;
 }

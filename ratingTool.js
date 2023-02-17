@@ -156,7 +156,7 @@ unlayer.registerTool({
     }),
     exporters: {
       web: function (values) {
-        return "<div>I am a custom tool.</div>";
+        return template;
       },
       email: function (values) {
         return template;
